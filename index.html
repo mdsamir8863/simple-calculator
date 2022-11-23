@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <form action="" name="forms">
+        <h1>Calculator</h1>
+      <input type="text" id="inputBox" class="inputBox" name="answer" placeholder="0.00"  />
+      <div class="btn-container">
+        <div class="btn-box">
+          <input type="button" value="1" onclick="forms.answer.value +='1'" />
+          <input type="button" value="2" onclick="forms.answer.value +='2'" />
+          <input type="button" value="3" onclick="forms.answer.value +='3'" />
+        </div>
+        <div class="btn-box">
+          <input type="button" value="4" onclick="forms.answer.value +='4'" />
+          <input type="button" value="5" onclick="forms.answer.value +='5'" />
+          <input type="button" value="6" onclick="forms.answer.value +='6'" />
+        </div>
+        <div class="btn-box">
+          <input type="button" value="7" onclick="forms.answer.value +='7'" />
+          <input type="button" value="8" onclick="forms.answer.value +='8'" />
+          <input type="button" value="9" onclick="forms.answer.value +='9'" />
+        </div>
+        <div class="btn-box">
+          <input type="button" value="+" onclick="forms.answer.value +='+'" />
+          <input type="button" value="-" onclick="forms.answer.value +='-'" />
+          <input type="button" value="*" onclick="forms.answer.value +='*'" />
+        </div>
+        <div class="btn-box">
+          <input type="button" value="/" onclick="forms.answer.value +='/'" />
+          <input type="button" value="0" onclick="forms.answer.value +='0'" />
+          <input
+            type="button"
+            value="="
+            onclick="forms.answer.value = eval(forms.answer.value)"
+          />
+        </div>
+      </div>
+      <input
+        class="clearbtn"
+        type="button"
+        value="Clear all"
+        onclick="forms.answer.value = ''"
+      />
+    </form>
+    <h2>Made by Samir</h2>
+    <script src="./index.js"></script>
+  </body>
+</html>
